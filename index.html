@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Vem festejar - Site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="./src/imagens/logo.png" alt="Logo VemFestejar" />
+    </header>
+    <main class="container">
+      <h1 class="produtos">Produtos</h1>
+      <div class="filtros">
+        <div class="categorias-itens">
+          <label for="categoria">Categoria</label>
+          <select id="categoria" class="categoria">
+            <option value="">Selecione um produto</option>
+            <option value="balões">Balões</option>
+            <option value="velas">Velas</option>
+            <option value="diversos">Diversos</option>
+          </select>
+        </div>
+        <div class="preco-itens">
+          <label for="preco">Preço Máximo (R$)</label>
+          <input type="text" id="preco" class="preco" placeholder="Ex: 50" />
+        </div>
+        <button class="btn-filtrar">Aplicar filtros</button>
+      </div>
+      <ul class="itens">
+        <li class="item" data-categoria="Balões" data-preco="12,00">
+          <img src="./src/imagens/balao-sao-roque-7-color.png" alt="balao-sao-roque-7-color" />
+
+          <div class="informacoes">
+            <h2 class="nome-item">Balão São Roque 7 color</h2>
+            <span class="categoria">Categoria: Balões</span>
+            <span class="preco">R$ 12,84</span>
+            <a href="http://wa.me/5592995268459?text=Olá, estou interessado em seus produtos!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="item" data-categoria="Balões" data-preco="12,00">
+          <img src="./src/imagens/balao-sao-roque-7.png" alt="balao-sao-roque-7" />
+          <div class="informacoes">
+            <h2 class="nome-item">Balão São Roque 7</h2>
+            <span class="categoria">Categoria: Balões</span>
+            <span class="preco">R$ 12,84</span>
+            <a href="http://wa.me/5592995268459?text=Olá, estou interessado em seus produtos!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="item" data-categoria="diversos" data-preco="13,00">
+          <img src="./src/imagens/copo-decartavel-neon.png" alt="copo-decartavel-neon" />
+          <div class="informacoes">
+            <h2 class="nome-item">Copo Descartável Neon</h2>
+            <span class="categoria">Categoria: Diversos</span>
+            <span class="preco">R$ 13,50</span>
+            <a href="http://wa.me/5592995268459?text=Olá, estou interessado em seus produtos!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="item" data-categoria="velas" data-preco="24,00">
+          <img src="./src/imagens/vela-cascata.png" alt="vela-cascata" />
+          <div class="informacoes">
+            <h2 class="nome-item">Vela Cascata</h2>
+            <span class="categoria">Categoria: Velas</span>
+            <span class="preco">R$ 24,00</span>
+            <a href="http://wa.me/5592995268459?text=Olá, estou interessado em seus produtos!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="item" data-categoria="velas" data-preco="3,00">
+          <img src="./src/imagens/vela-palitinho.png" alt="vela-palitinho" />
+          <div class="informacoes">
+            <h2 class="nome-item">Vela Palitinho</h2>
+            <span class="categoria">Categoria: Velas</span>
+            <span class="preco">R$ 3,02</span>
+            <a href="http://wa.me/5592995268459?text=Olá, estou interessado em seus produtos!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="item" data-categoria="velas" data-preco="8,00">
+          <img src="./src/imagens/vela-rose-gold.png" alt="vela-rose-gold" />
+          <div class="informacoes">
+            <h2 class="nome-item">Vela Rosé Gold</h2>
+            <span class="categoria">Categoria: Velas</span>
+            <span class="preco">R$ 8,09</span>
+            <a href="http://wa.me/5592995268459?text=Olá, estou interessado em seus produtos!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="item" data-categoria="diversos" data-preco="150,00">
+          <img src="./src/imagens/bandeja-bonec-neve.png" alt="bandeja-bonec-neve" />
+          <div class="informacoes">
+            <h2 class="nome-item">Bandeja Bonceo de Neve</h2>
+            <span class="categoria">Categoria: Diversos</span>
+            <span class="preco">R$ 150,00</span>
+            <a href="http://wa.me/5592995268459?text=Olá, estou interessado em seus produtos!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="item" data-categoria="diversos" data-preco="165,60">
+          <img src="./src/imagens/bandeja-pinheiro.png" alt="bandeja-pinheiro" />
+          <div class="informacoes">
+            <h2 class="nome-item">Bandeja Pinheiro</h2>
+            <span class="categoria">Categoria: Diversos</span>
+            <span class="preco">R$ 165,60</span>
+            <a href="http://wa.me/5592995268459?text=Olá, estou interessado em seus produtos!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer class="rodape">@2025 - Todos os direitos reservados</footer>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
